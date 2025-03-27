@@ -26,18 +26,30 @@ body {
 .hero h2,p{
     font-size: 1.5rem;
 }
-/* .typing-effect {
+.typing-effect {
+    display: inline-block;
     font-size: 1.5rem;
     font-style: italic;
+    border-right: 5px solid;
+    overflow: hidden;
+    border-color: white;
     color: #f4b400;
-    animation: typing 3s steps(20) ;
-} */
+    animation: typing 3s steps(68),
+                cursor 0.4s step-end infinite alternate;
+}
  .download-button:hover{
     background-color: burlywood;
  }
+ @keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+ }
 @keyframes typing {
-    from { width: 0; opacity: 0.5; }
-    to { width: 100%; opacity: 1; }
+    from { 
+        width: 0; 
+        opacity: 0;
+    }
 }
 .hero .highlight {
     color: #f4b400;
