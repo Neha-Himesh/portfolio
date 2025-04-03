@@ -177,5 +177,6 @@ h2{
 .progress {
     height: 100%;
     background-color: #f4b400;
+    width: 0%;
     transition: width 1s ease-in-out;
 }
