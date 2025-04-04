@@ -178,5 +178,70 @@ h2{
     height: 100%;
     background-color: #f4b400;
     width: 0%;
-    transition: width 1s ease-in-out;
+}
+.progress span{
+    float: right;
+    height: 40px;
+    width: 40px;
+    background: white;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    border-radius: 50%;
+}
+.progress-html{
+    animation: html-animation 1s linear forwards;
+}
+
+
+.progress-css{
+    animation: css-animation 1s linear forwards;
+}
+
+
+.progress-javascript{
+    animation: javascript-animation 1s linear forwards;
+}
+
+
+.progress-nodejs{
+    animation: nodejs-animation 1s linear forwards;
+}
+
+.progress-bootstrap{
+    animation: bootstrap-animation 1s linear forwards;
+}
+
+.progress-sql{
+    animation: sql-animation 1s linear forwards;
+}
+@keyframes html-animation{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes css-animation{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes javascript-animation{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes nodejs-animation{
+    100%{
+        width: 70%;
+    }
+} 
+@keyframes bootstrap-animation{
+    100%{
+        width: 90%;
+    }
+}
+@keyframes sql-animation{
+    100%{
+        width: 80%;
+    }
 }

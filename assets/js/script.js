@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                const targetWidth = entry.target.getAttribute("data-width");
-                entry.target.style.width = targetWidth; // Animate width when visible
+                const className = entry.target.getAttribute("data-name");
+                entry.target.classList.add(className); // Animate width when visible
+                console.log("Into the view");
             }
         });
     }, { threshold: 0.5 }); // Trigger when 50% visible
