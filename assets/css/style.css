@@ -40,7 +40,7 @@ h2{
     color: #f4b400;
     font-weight: 400;
 }
-.education-work-description{
+.education-work-description, .details-address, .details-phone, .details-email{
     color: #A2a2a2;
 }
 .project-card > p{
@@ -98,7 +98,7 @@ h2{
     animation: pulse 4s infinite;
 
 }
-.hero .highlight {
+.hero .highlight, .flex-column h3 {
     color: #f4b400;
 }
 .btn-primary {
