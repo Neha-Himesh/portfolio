@@ -50,7 +50,7 @@ h2{
 }
 .education-work-years{
     font-size: 1.75rem;
-    color: #f4b400;
+    color: #00f4bf;
     font-weight: 400;
 }
 .education-work-description, .details-address, .details-phone, .details-email{
@@ -187,7 +187,7 @@ h2{
 .progress-bar {
     width: 100%;
     height: 8px;
-    background-color: #222;
+    background-color: black;
     border-radius: 5px;
     margin-top: 5px;
     overflow: hidden;
@@ -196,7 +196,7 @@ h2{
 /* Progress fill */
 .progress {
     height: 100%;
-    background-color: #f4b400;
+    background-color: #dcee00; /*#00f4bf;*/
     width: 0%;
 }
 .progress span{
@@ -206,7 +206,7 @@ h2{
     background: white;
     margin-top: -15px;
     margin-right: -20px;
-    color: #333;
+    color: black;
     border-radius: 50%;
 }
 .progress-html{
