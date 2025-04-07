@@ -265,3 +265,23 @@ h2{
         width: 80%;
     }
 }
+
+#project-card-1{
+    transform: rotate(45deg);
+    overflow: hidden;
+    /* width: 500px;
+    height: 650px; */
+    background-color: #ffffff1a
+
+}
+
+.project-card-content{
+    transform: translateX(-60px);
+    transform: rotate(-45deg);
+    /* width: 70%; */
+    text-align: center;
+   
+}
+.m-5{
+    margin: 4rem important;
+}
