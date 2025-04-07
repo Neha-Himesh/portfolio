@@ -285,3 +285,6 @@ h2{
 .m-5{
     margin: 4rem important;
 }
+#download-arrow{
+    filter: invert(1);
+}
