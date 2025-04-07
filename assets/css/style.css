@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: rgb(36, 34, 34);
+    background: rgb(36, 34, 34); /*rgb(6,27,57);*/
     color: white;
 }
 .light-mode{
@@ -32,6 +32,9 @@ body {
     height: 90vh;
     background: rgba(0, 0, 0, 0.6); Adds a dark overlay
 } */
+ .hero .highlight {
+    color: #64adaf;
+}
 .hero h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -42,7 +45,7 @@ body {
 }
 h2{
     font-size: 3rem;
-    color: #f4b400;
+    color: #00f4bf; /* #64adaf blue for neha himesh #c2f400 neon green for titles #dcee00 for subtitle of hero*/
     font-weight: 600;
 }
 .education-work-years{
@@ -71,7 +74,7 @@ h2{
     overflow: hidden;
     border-color: white;
     white-space: nowrap;
-    color: #f4b400;
+    color: #dcee00;
     animation: 
         typing 2s steps(67) ,
         cursor 0.4s step-end infinite alternate;
@@ -108,12 +111,19 @@ h2{
     animation: pulse 4s infinite;
 
 }
-.hero .highlight {
-    color: #f4b400;
-}
-.btn-primary {
-    background-color: #f4b400;
+
+.project-card .btn{
+    background-color: #00f4bf;
+    color: black;
     border: none;
+}
+/* .btn-primary:hover{
+   color: #1ba889 !important;  
+} */
+
+.project-card .btn:hover{
+    background-color: #1ba889 !important; 
+    color: white;
 }
 .dark-mode {
     background-color: #222;
