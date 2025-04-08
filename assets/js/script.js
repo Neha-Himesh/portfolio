@@ -58,20 +58,21 @@ document.addEventListener("DOMContentLoaded", function () {
   	    });
   	});
 	var musicCodingIcon = document.getElementById('music-coding-image');
+	var htmlTagIcon = document.getElementById('html-tag-icon');
 	function addFadeOutInClass(){
-	  musicCodingIcon.addClass('fade-out');
+	  musicCodingIcon.classList.add('fade-out');
 	  setTimeout(function(){
-		  musicCodingIcon.removeClass('fade-out');
-		  musicCodingIcon.addClass('fade-in');
+		  musicCodingIcon.classList.remove('fade-out');
+		  musicCodingIcon.classList.add('fade-in');
 	  }, 5000);
 	  setTimeout(function(){
-		  musicCodingIcon.removeClass('fade-in');
-		  musicCodingIcon.addClass('fade-out');
-	  }, 5000);
+		  musicCodingIcon.classList.remove('fade-in');
+	  }, 10000);
 	
 	}
 	
 	setInterval(addFadeOutInClass, 10000);
+	addFadeOutInClass();
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
