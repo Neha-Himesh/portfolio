@@ -291,7 +291,7 @@ h2{
 
 .fade-out{
     animation: fadeOut;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-delay: 0s;
     /* animation: fadeOut;
     animation-duration: 10s;
@@ -300,13 +300,13 @@ h2{
 
 .fade-in{
     animation: fadeIn;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-delay: 0s;
     /* animation: fadeOut;
     animation-duration: 10s;
     animation-delay: 10s; */
 }
-#html-tag-icon{
+#html-tag-icon, #music-icon, #music-icon-1{
     filter: invert(1);
 }
 /* 
