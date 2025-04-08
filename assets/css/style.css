@@ -306,6 +306,9 @@ h2{
     animation-duration: 10s;
     animation-delay: 10s; */
 }
+#html-tag-icon{
+    filter: invert(1);
+}
 /* 
 #html-tag-icon{
     animation: fadeIn;

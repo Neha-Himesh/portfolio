@@ -60,18 +60,31 @@ document.addEventListener("DOMContentLoaded", function () {
 	var musicCodingIcon = document.getElementById('music-coding-image');
 	var htmlTagIcon = document.getElementById('html-tag-icon');
 	function addFadeOutInClass(){
-	  musicCodingIcon.classList.add('fade-out');
-	  setTimeout(function(){
-		  musicCodingIcon.classList.remove('fade-out');
-		  musicCodingIcon.classList.add('fade-in');
-	  }, 5000);
-	  setTimeout(function(){
-		  musicCodingIcon.classList.remove('fade-in');
-	  }, 10000);
+		musicCodingIcon.classList.remove('d-none');
+	  	musicCodingIcon.classList.add('fade-in');
+		setTimeout(function(){
+			musicCodingIcon.classList.remove('fade-in');
+			musicCodingIcon.classList.add('fade-out');
+		}, 5000)
+	  	setTimeout(function(){
+			  musicCodingIcon.classList.remove('fade-out');
+			  musicCodingIcon.classList.add('d-none');
+			  htmlTagIcon.classList.remove('d-none');
+			  htmlTagIcon.classList.add('fade-in');
+	  	}, 10000);
+	  	setTimeout(function(){
+			  htmlTagIcon.classList.remove('fade-in');
+			  htmlTagIcon.classList.add('fade-out');
+	  	}, 15000);
+
+	  	setTimeout(function(){
+			htmlTagIcon.classList.remove('fade-out');
+			htmlTagIcon.classList.add('d-none');
+		}, 20000);
 	
 	}
 	
-	setInterval(addFadeOutInClass, 10000);
+	setInterval(addFadeOutInClass, 20000);
 	addFadeOutInClass();
 });
 
