@@ -288,3 +288,47 @@ h2{
 #download-arrow{
     filter: invert(1);
 }
+
+.fade-out{
+    animation: fadeOut;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    /* animation: fadeOut;
+    animation-duration: 10s;
+    animation-delay: 10s; */
+}
+
+.fade-in{
+    animation: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    /* animation: fadeOut;
+    animation-duration: 10s;
+    animation-delay: 10s; */
+}
+/* 
+#html-tag-icon{
+    animation: fadeIn;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    filter: invert(1);
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-out {
+    animation: fadeInOut 0.4s step-end infinite alternate;
+  } */
