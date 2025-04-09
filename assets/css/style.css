@@ -24,17 +24,14 @@ body {
 .dark-mode .btn-primary {
     background-color: #ffcc00;
 }
-
 #darkModeToggle{
     color: #ffffff8c;
 }
-
 h2{
     font-size: 3rem;
     color: #00f4bf;
     font-weight: 600;
 }
-
 .m-5{
     margin: 4rem important;
 }

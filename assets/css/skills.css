@@ -1,17 +1,13 @@
-
-
 /* Skill container */
 .skill {
     margin-bottom: 20px;
     text-align: left;
 }
-
 /* Skill label */
 .skill span {
     font-size: 18px;
     font-weight: bold;
 }
-
 /* Progress bar container */
 .progress-bar {
     width: 100%;
@@ -21,37 +17,27 @@
     margin-top: 5px;
     overflow: hidden;
 }
-
 /* Progress fill */
 .progress {
     height: 100%;
     background-color: #dcee00; /*#00f4bf;*/
     width: 0%;
 }
-
 .progress-html{
     animation: html-animation 1s linear forwards;
 }
-
-
 .progress-css{
     animation: css-animation 1s linear forwards;
 }
-
-
 .progress-javascript{
     animation: javascript-animation 1s linear forwards;
 }
-
-
 .progress-nodejs{
     animation: nodejs-animation 1s linear forwards;
 }
-
 .progress-bootstrap{
     animation: bootstrap-animation 1s linear forwards;
 }
-
 .progress-sql{
     animation: sql-animation 1s linear forwards;
 }
