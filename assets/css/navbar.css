@@ -7,7 +7,7 @@
     background: rgba(0, 0, 0, 0.8); /*check this */
     transition: all 0.3s ease-in-out;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+.nav-pills .nav-link.active{
     border: white 2px solid;
     background-color: transparent !important ;
 }

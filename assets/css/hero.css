@@ -48,9 +48,6 @@
     animation-duration: 2s;
     animation-delay: 2s;
  }
- .download-button:hover{
-    background-color: burlywood;
- }
 
 .animate-image{
     animation: pulse 4s infinite;
