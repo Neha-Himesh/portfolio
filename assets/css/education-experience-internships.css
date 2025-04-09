@@ -1,0 +1,8 @@
+.education-work-years{
+    font-size: 1.75rem;
+    color: #00f4bf;
+    font-weight: 400;
+}
+.education-work-description, .details-address, .details-phone, .details-email{
+    color: #A2a2a2;
+}

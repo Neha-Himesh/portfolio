@@ -1,0 +1,16 @@
+
+.fade-out{
+    animation: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+.fade-in{
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+#html-tag-icon, #music-icon, #music-icon-1{
+    filter: invert(1);
+}
