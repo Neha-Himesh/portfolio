@@ -50,6 +50,7 @@
 
 .animate-image{
     animation: pulse 4s infinite;
+   
 
 }
 #download-button:hover{
@@ -58,9 +59,4 @@
 }
 #download-arrow{
     filter: invert(1);
-}
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
 }
