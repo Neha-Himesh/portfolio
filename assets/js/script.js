@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ id: "home", file: "html-components/hero.html" },
 		{ id: "projects", file: "html-components/projects.html" },
 		{ id: "about", file: "html-components/about.html" },
-		{ id: "contact", file: "html-components/contact.html" },
+		{ id: "contact", file: "html-components/contact-form.html" },
 		{ id: "education-experience-internships", file: "html-components/education-experience-internships.html" },
 		{ id: "skills", file: "html-components/skills.html" },
 		{ id: "contact-details", file: "html-components/contact-details.html" },
