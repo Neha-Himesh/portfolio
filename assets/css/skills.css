@@ -1,7 +1,4 @@
 
-.skills {
-    margin: auto;
-}
 
 /* Skill container */
 .skill {
@@ -31,16 +28,7 @@
     background-color: #dcee00; /*#00f4bf;*/
     width: 0%;
 }
-.progress span{
-    float: right;
-    height: 40px;
-    width: 40px;
-    background: white;
-    margin-top: -15px;
-    margin-right: -20px;
-    color: black;
-    border-radius: 50%;
-}
+
 .progress-html{
     animation: html-animation 1s linear forwards;
 }

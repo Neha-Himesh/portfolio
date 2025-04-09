@@ -10,33 +10,14 @@
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-#project-card-1{
-    transform: rotate(45deg);
-    overflow: hidden;
-    /* width: 500px;
-    height: 650px; */
-    background-color: #ffffff1a
-
-}
-
-.project-card-content{
-    transform: translateX(-60px);
-    transform: rotate(-45deg);
-    /* width: 70%; */
-    text-align: center;
-   
-}
 .project-card > p{
     font-size: 1.3rem;
 }
-
 .project-card .btn{
     background-color: #00f4bf;
     color: black;
     border: none;
 }
-
 .project-card .btn:hover{
     background-color: #1ba889 !important; 
     color: white;
