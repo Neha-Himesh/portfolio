@@ -1,5 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const darkModeToggle = document.getElementById("darkModeToggle");
+	const includes = [
+		{ id: "portfolio-navbar", file: "html-components/navbar.html" },
+		{ id: "home", file: "html-components/hero.html" },
+		{ id: "projects", file: "html-components/projects.html" },
+		{ id: "about", file: "html-components/about.html" },
+		{ id: "contact", file: "html-components/contact.html" },
+		{ id: "education-experience-internships", file: "html-components/education-experience-internships.html" },
+		{ id: "skills", file: "html-components/skills.html" },
+		{ id: "contact-details", file: "html-components/contact-details.html" },
+	  ];  
+	  let loadedCount = 0;
+	  includes.forEach(include => {
+		fetch(include.file)
+		  .then(response => response.text())
+		  .then(data => {
+			const element = document.getElementById(include.id);
+			if (element) {
+			  element.innerHTML = data;
+			} else {
+			  console.warn(`Element with ID '${include.id}' not found.`);
+			}
+		})
+		.catch(err => console.error(`Error loading ${include.file}:`, err))
+		.finally(() =>{
+			loadedCount ++;
+			if(loadedCount === includes.length){
+				initializePageScripts();
+			}
+		});
+	  });
+	function initializePageScripts(){
+		const darkModeToggle = document.getElementById("darkModeToggle");
   	const body = document.body;
   	const progressBars = document.querySelectorAll(".progress");
 	
@@ -189,6 +220,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	        }
 	    });
 	});
+	}
+	
 
 });
 
