@@ -22,12 +22,13 @@
     border-right: 5px solid;
     overflow: hidden;
     border-color: white;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     color: #dcee00;
     animation: 
         typing 2s steps(67) ,
         cursor 0.4s step-end infinite alternate;
     animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 @keyframes typing {
     from { 
