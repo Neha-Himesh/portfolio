@@ -24,3 +24,6 @@
     background-color: #1ba889 !important; 
     color: white;
 }
+#projects>h2.light-mode-h2{
+    color: #236070;
+}

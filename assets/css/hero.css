@@ -1,10 +1,16 @@
 .hero {
     padding-top: 120px;
     position: relative;
-    min-height: auto
+    min-height: auto;
 }
-
- .hero .highlight {
+.hero.light-mode{
+    /* background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 45%, rgba(221,244,243,0.9766500350140056) 100%);
+} */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 45%, rgba(138,137,24,0.9766500350140056) 100%);
+}
+.hero .highlight {
     color: #64adaf;
 }
 .hero h1 {
