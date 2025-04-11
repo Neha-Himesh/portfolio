@@ -18,10 +18,14 @@
             <form action="https://formspree.io/f/mvgkwnvz" method="POST" id="portfolio-form">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1 col-12">
-                        <input type="text" name ="name" placeholder="Your Name" class="m-3 ms-0 p-2 w-100 rounded" id="form-name">
+                        <input type="text" name="name" placeholder="Your Name" class="m-3 ms-0 p-2 w-100 rounded" id="form-name">
+                        <div class="text-danger d-none ms-3" id="name-error"> Please enter a name.</div>
                         <input type="email" name ="email" placeholder="Your Email" class="m-3 ms-0 p-2 w-100 rounded" id="form-email">
-                        <input type="number" name ="phone-number" placeholder="Phone Number" class="m-3 ms-0 p-2 w-100 rounded" id="form-number">
+                        <div class="text-danger d-none ms-3" id="email-error">Please enter a valid email address.</div>
+                        <input type="tel" name ="phone-number" placeholder="Phone Number" class="m-3 ms-0 p-2 w-100 rounded" id="form-phone-number" >
+                        <div class="text-danger ms-3 d-none" id="phone-error">Please enter valid phone number. Phone number must be exactly 10 digits.</div>
                         <textarea name="message" name = "message" placeholder="Message" rows="3" class="m-3 ms-0 p-2 w-100 rounded" id="form-message"></textarea>
+                        <div class="text-danger ms-3 d-none" id="message-error">Please enter a message.</div>
                         <button type="submit" class="btn btn-success p-2 m-3 ms-0" id="form-submit"> Submit Now</button>
                     </div>
                 </div>
