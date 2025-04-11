@@ -28,15 +28,25 @@ document.addEventListener("DOMContentLoaded", function () {
 		formHandler();
 		iconFader();
 		smoothScroll();
-		const introLines = [
-			"Frontend Developer | Backend Developer | Hindustani Classical Singer"
-		];
-		let introTyping;
-		if(window.innerWidth > 992){
-			introTyping = new TypingEffectAnimation("introduction-desktop-ipad", introLines);
-		} else {
-			introTyping = new TypingEffectAnimation("introduction-mobile-mini-tablet", introLines);
+		function initializeTyping(){
+			const introLines = [
+				"Frontend Developer | Backend Developer | Hindustani Classical Singer"
+			];
+			let introTyping;
+			if(window.innerWidth > 992){
+				introTyping = new TypingEffectAnimation("introduction-desktop-ipad", introLines);
+			} else {
+				introTyping = new TypingEffectAnimation("introduction-mobile-mini-tablet", introLines);
+			}
+			introTyping.start();
 		}
-		introTyping.start();
-		introTyping.restartOnResize();
+		initializeTyping();
+				// Re-run on resize (debounced)
+		let resizeTimer;
+		window.addEventListener("resize", () => {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(() => {
+					initializeTyping();
+				}, 300);
+		});	
 	}
