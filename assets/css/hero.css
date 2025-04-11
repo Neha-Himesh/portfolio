@@ -27,9 +27,12 @@
     font-style: italic;
     border-right: 5px solid;
     overflow: hidden;
+    overflow-wrap: break-word;
     border-color: white;
-    /* white-space: nowrap; */
+    white-space: pre-wrap; 
     color: #dcee00;
+    animation: typing;
+    animation-duration: 1s;
     animation: 
         typing 2s steps(67) ,
         cursor 0.4s step-end infinite alternate;

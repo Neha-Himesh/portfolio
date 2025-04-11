@@ -4,6 +4,7 @@ import { iconFader } from "./icon-fader.js";
 import { loadComponents } from "./load-components.js";
 import { progressBarScrollAnimation } from "./progress-bar-scroll-animation.js";
 import { smoothScroll } from "./smooth-scroll.js";
+import { TypingEffectAnimation } from "./typing-effect-animation.js";
 
 document.addEventListener("DOMContentLoaded", function () {
 	const includes = [
@@ -27,4 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		formHandler();
 		iconFader();
 		smoothScroll();
+		const introLines = [
+			"Frontend Developer | Backend Developer | Hindustani Classical Singer"
+		  ];
+		  
+		  const introTyping = new TypingEffectAnimation("introduction", introLines);
+		  introTyping.start();
+		  introTyping.restartOnResize();
 	}
