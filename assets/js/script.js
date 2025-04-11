@@ -30,9 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		smoothScroll();
 		const introLines = [
 			"Frontend Developer | Backend Developer | Hindustani Classical Singer"
-		  ];
-		  
-		  const introTyping = new TypingEffectAnimation("introduction", introLines);
-		  introTyping.start();
-		  introTyping.restartOnResize();
+		];
+		let introTyping;
+		if(window.innerWidth > 992){
+			introTyping = new TypingEffectAnimation("introduction-desktop-ipad", introLines);
+		} else {
+			introTyping = new TypingEffectAnimation("introduction-mobile-mini-tablet", introLines);
+		}
+		introTyping.start();
+		introTyping.restartOnResize();
 	}

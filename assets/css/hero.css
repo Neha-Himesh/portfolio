@@ -26,8 +26,9 @@
     font-size: 1.5rem;
     font-style: italic;
     border-right: 5px solid;
-    overflow: hidden;
+    overflow: visible;
     overflow-wrap: break-word;
+    word-break: break-word;
     border-color: white;
     white-space: pre-wrap; 
     color: #dcee00;

@@ -27,6 +27,10 @@ export class TypingEffectAnimation {
     }
   
     start() {
+      if (!this.typingElement) {
+        console.error(`Element with ID "${this.elementId}" not found.`);
+        return;
+      }
       clearTimeout(this.typingTimer);
       this.typingElement.textContent = "";
       this.typingElement.classList.add("cursor");
