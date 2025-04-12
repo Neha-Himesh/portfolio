@@ -9,19 +9,19 @@
 /* Add font style as below to the whole website */
 body{
     font-family: 'Poppins', sans-serif;
+    background: rgb(36, 34, 34);
 }
 
 /* Modify the background color of the website when dark mode button is selected. Change the color of the text to white */
-.dark-mode {
-    background: rgb(36, 34, 34);
+/* .dark-mode {
     color: white !important;
 }
 
 /* Modify the background color to white and color of the text to black in light mode */
-.light-mode{
+/* .light-mode{
     background:white;
     color: black !important;
-}
+} */ 
 
 /* .dark-mode {
     background-color: #222;
@@ -34,14 +34,14 @@ body{
 }
 
 /* Change the background color of the  button which has class btn-primary in darkmode */
-.dark-mode .btn-primary {
+/* .dark-mode .btn-primary {
     background-color: #ffcc00;
-}
+} */
 
 /* Add color of the text of darkmode-lightmode toggle button to #ffffff8c  */
-#darkModeToggle{
+/* #darkModeToggle{
     color: #ffffff8c;
-}
+} */
 
 /* Add font size, color of the text, font weight to the text inside <h2> tag */
 h2{

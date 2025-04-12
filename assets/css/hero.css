@@ -6,10 +6,10 @@
 }
 
 /* Adding background color when light mode of the website is chosen */
-.hero.light-mode{
+/* .hero.light-mode{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 45%, rgba(138,137,24,0.9766500350140056) 100%);
-}
+} */
 
 /* Adding the below color to the text "Neha Himesh" in the hero section */
 .hero .highlight {
@@ -33,17 +33,15 @@
     display: inline-block;
     font-size: 1.5rem;
     font-style: italic;
-    border-right: 5px solid;
-    overflow: visible;
+    border-right: 5px solid white;
+    overflow: hidden;
     overflow-wrap: break-word;
     word-break: break-word;
-    border-color: white;
     white-space: pre-wrap; 
     color: #dcee00;
-    animation: typing;
     animation-duration: 1s;
     animation: 
-        typing 2s steps(67) ,
+        typing 2s steps(67, end) ,
         cursor 0.4s step-end infinite alternate;
     animation-delay: 0s;
     animation-fill-mode: forwards;

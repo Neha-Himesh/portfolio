@@ -1,4 +1,5 @@
 export function iconFader(){
+	//Fetch all the icons elements from html
     var musicIcon = document.getElementById('music-icon');
 	var htmlTagIcon = document.getElementById('html-tag-icon');
 	var musicIcon1 = document.getElementById('music-icon-1');
@@ -77,7 +78,7 @@ export function iconFader(){
 		}, 9000);
 
 		setTimeout(function(){
-			// Remove fade-out class and add d-none class so that it doesnt get displayed in the viewport\
+			// Remove fade-out class and add d-none class so that it doesnt get displayed in the viewport
 			cssSyntaxIcon.classList.remove('fade-out');
 			cssSyntaxIcon.classList.add('d-none');
 			//Remove d-none class from css syntax icon (5th image) such that it gets visible in the viewport and add fade-in class such that it fades in smoothly into the viewport
