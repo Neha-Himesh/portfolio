@@ -1,8 +1,10 @@
+/* Added #00f4bf color to years of education/experience/internships */
 .education-work-years{
     font-size: 1.75rem;
     color: #00f4bf;
     font-weight: 400;
 }
+/* Added #a2a2a2 color got description of education/work/internship */
 .education-work-description{
     color: #A2a2a2;
 }

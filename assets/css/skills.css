@@ -1,14 +1,16 @@
-/* Skill container */
+/* Add margin bottom as 20px to the skill container. Align the text to the left */
 .skill {
     margin-bottom: 20px;
     text-align: left;
 }
-/* Skill label */
+
+/* Add font size and weight to the Skill label */
 .skill span {
     font-size: 18px;
     font-weight: bold;
 }
-/* Progress bar container */
+
+/* Add width, height, border color, border radius, margin top to the progress bar container */
 .progress-bar {
     width: 100%;
     height: 8px;
@@ -17,55 +19,81 @@
     margin-top: 5px;
     overflow: hidden;
 }
+
 /* Progress fill */
+/* Add background color to the progress class, width as 0 and height as 100% */
 .progress {
     height: 100%;
     background-color: #dcee00; /*#00f4bf;*/
     width: 0%;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-html{
     animation: html-animation 1s linear forwards;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-css{
     animation: css-animation 1s linear forwards;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-javascript{
     animation: javascript-animation 1s linear forwards;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-nodejs{
     animation: nodejs-animation 1s linear forwards;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-bootstrap{
     animation: bootstrap-animation 1s linear forwards;
 }
+
+/* Add animation of color fill to the progress-html div */
 .progress-sql{
     animation: sql-animation 1s linear forwards;
 }
+
+/* Defining the html animation which fills the color till 85% of the width */
 @keyframes html-animation{
     100%{
         width: 85%;
     }
 }
+
+/* Defining the css animation which fills the color till 75% of the width */
 @keyframes css-animation{
     100%{
         width: 75%;
     }
 }
+
+/* Defining the javascript animation which fills the color till 85% of the width */
 @keyframes javascript-animation{
     100%{
         width: 85%;
     }
 }
+
+/* Defining the nodejs animation which fills the color till 70% of the width */
 @keyframes nodejs-animation{
     100%{
         width: 70%;
     }
 } 
+
+/* Defining the bootstrap animation which fills the color till 90% of the width */
 @keyframes bootstrap-animation{
     100%{
         width: 90%;
     }
 }
+
+/* Defining the sql animation which fills the color till 80% of the width */
 @keyframes sql-animation{
     100%{
         width: 80%;

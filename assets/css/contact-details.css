@@ -1,3 +1,4 @@
+/*  Changing color of the details of phone, address, email to #a2a2a2 */
 .details-address, .details-phone, .details-email{
     color: #A2a2a2;
 }

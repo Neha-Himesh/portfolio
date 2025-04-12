@@ -1,16 +1,16 @@
-
+/*fadeOut animation is used in about section to slowly make the current image as invisible */
 .fade-out{
     animation: fadeOut;
-    animation-duration: 1s;
-    animation-delay: 0s;
+    animation-duration: 1s; /* Animation duration as 1 second */
+    animation-delay: 0s; /* Animation delay as none */
 }
-
+/* fadeIn animation is used in about section to slowly load the next image once the previous image is faded */
 .fade-in{
     animation: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 0s;
+    animation-duration: 1s; /* Animation duration as 1 second */
+    animation-delay: 0s; /* Animation delay as none */
 }
-
+/* Changing the color of black colored images to white */
 #html-tag-icon, #music-icon, #music-icon-1{
     filter: invert(1);
 }
