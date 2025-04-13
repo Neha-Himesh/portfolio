@@ -8,6 +8,7 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     width: 100%;
     height: 100%;
+    color: white;
 }
 
 /* Scale the project card by 5% when hovered on the same. Also change the box shadow of the same */
@@ -19,6 +20,7 @@
 /* Modify the font size of the text inside <p> tag */
 .project-card > p{
     font-size: 1.3rem;
+    color: white;
 }
 
 /* Modify the background color of the button inside the project card. Remove the border, Add color of the text as black */
