@@ -1,31 +1,55 @@
+<!-- Main container for the Design and Contact Form section -->
 <div class="container">
     <div class="row">
+        
+        <!-- Left Column: Design and Innovation content -->
         <div class="col-lg-6 col-12 text-center">
             <h2>
                 Design and Innovation
             </h2>
             <p>
-                I'm driven by a constant curiosity to innovate and design. This passion fuels my desire to learn new things and satisfies my creative spirit. I believe innovation is a continuous journey — there's always something new to discover. Through coding, I bring my ideas to life and keep that creative fire burning.
+                I'm driven by a constant curiosity to innovate and design. This passion fuels my desire to learn new things and satisfies my creative spirit.
+                I believe innovation is a continuous journey — there's always something new to discover.
+                Through coding, I bring my ideas to life and keep that creative fire burning.
             </p>    
         </div>
+
+        <!-- Right Column: Contact Form section -->
         <div class="col-lg-6 col-12 text-center">
             <h2>
                 Get in touch
             </h2>
             <p>
-               Have any queries? Want to type your message? Your form is here. Please fill it and I will get back to you as early as possible!
+                Have any queries? Want to type your message? Your form is here.
+                Please fill it and I will get back to you as early as possible!
             </p>
+
+            <!-- Contact form using Formspree endpoint -->
             <form action="https://formspree.io/f/mvgkwnvz" method="POST" id="portfolio-form">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1 col-12">
+                        
+                        <!-- Name input field -->
                         <input type="text" name="name" placeholder="Your Name" class="m-3 ms-0 p-2 w-100 rounded" id="form-name">
+                        <!-- Error message for name validation -->
                         <div class="text-danger d-none ms-3" id="name-error"> Please enter a name.</div>
-                        <input type="email" name ="email" placeholder="Your Email" class="m-3 ms-0 p-2 w-100 rounded" id="form-email">
+
+                        <!-- Email input field -->
+                        <input type="email" name="email" placeholder="Your Email" class="m-3 ms-0 p-2 w-100 rounded" id="form-email">
+                        <!-- Error message for email validation -->
                         <div class="text-danger d-none ms-3" id="email-error">Please enter a valid email address.</div>
-                        <input type="tel" name ="phone-number" placeholder="Phone Number" class="m-3 ms-0 p-2 w-100 rounded" id="form-phone-number" >
+
+                        <!-- Phone Number input field -->
+                        <input type="tel" name="phone-number" placeholder="Phone Number" class="m-3 ms-0 p-2 w-100 rounded" id="form-phone-number">
+                        <!-- Error message for phone number validation -->
                         <div class="text-danger ms-3 d-none" id="phone-error">Please enter valid phone number. Phone number must be exactly 10 digits.</div>
-                        <textarea name="message" name = "message" placeholder="Message" rows="3" class="m-3 ms-0 p-2 w-100 rounded" id="form-message"></textarea>
+
+                        <!-- Message textarea -->
+                        <textarea name="message" placeholder="Message" rows="3" class="m-3 ms-0 p-2 w-100 rounded" id="form-message"></textarea>
+                        <!-- Error message for message validation -->
                         <div class="text-danger ms-3 d-none" id="message-error">Please enter a message.</div>
+
+                        <!-- Submit button -->
                         <button type="submit" class="btn btn-success p-2 m-3 ms-0" id="form-submit"> Submit Now</button>
                     </div>
                 </div>
