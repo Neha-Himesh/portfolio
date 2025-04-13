@@ -31,11 +31,12 @@ export function smoothScroll(){
 	                top: offsetPosition,
 	                behavior: 'smooth'
 	            });
-				console.log(prevTargetElement);
+				// Remove the 'active' class from prevTargetElement
 				prevTargetElement.classList.remove('active');
+				// Add 'active' class to the current element
 				this.classList.add('active');
+				// Initialise the prevTargetElement variable to the current variable
 				prevTargetElement = this;
-				console.log(prevTargetElement);
 	        }
 	    });
 	});
