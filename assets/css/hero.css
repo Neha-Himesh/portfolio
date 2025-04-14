@@ -33,18 +33,12 @@
     display: inline-block;
     font-size: 1.5rem;
     font-style: italic;
-    border-right: 5px solid white;
+    /* border-right: 5px solid white; */
     overflow: hidden;
     overflow-wrap: break-word;
     word-break: break-word;
     white-space: pre-wrap; 
     color: #dcee00;
-    animation-duration: 1s;
-    animation: 
-        typing 2s steps(67, end) ,
-        cursor 0.4s step-end infinite alternate;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
 }
 /* Creating custom made animation called typing which incrases width from 0 to 100 and displays text in typing style */
 @keyframes typing {
@@ -55,12 +49,6 @@
         width: 100%;
     }
 }
-/* Creating a replica of sursor using cursor custom made animation which displays on the screen as the cursor present in text editor */
-@keyframes cursor{
-    50%{
-        border-color: transparent;
-    }
- }
 
  /* Creating a bounceIn animation effect for the description of the person for a duration of 2 seconds after a delay of 2 seconds */
  .details{

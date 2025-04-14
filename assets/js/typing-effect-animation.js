@@ -21,6 +21,7 @@ export class TypingEffectAnimation {
 
 		// Timer reference used for clearing/restarting the typing animation
 		this.typingTimer = null;
+
 	}	
 
 	// Recursive function to type the next character or line
@@ -47,9 +48,6 @@ export class TypingEffectAnimation {
 				// Pause before typing the next line
 				this.typingTimer = setTimeout(() => this.typeNext(), this.pause);
 			}
-		} else {
-			// Remove the blinking cursor class once typing is complete
-			this.typingElement.classList.remove("cursor");
 		}
 	}
 
