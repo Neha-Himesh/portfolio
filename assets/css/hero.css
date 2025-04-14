@@ -28,7 +28,7 @@
     font-size: 1.5rem;
 }
 
-/* Added animation to the description in hero section such that it creates a typing effect when the text is loaded */
+/* Add basic css properties for the class and make sure the text is not overlapped. It follows the next line if the device width is small */
 .typing-effect {
     display: inline-block;
     font-size: 1.5rem;
@@ -39,15 +39,6 @@
     word-break: break-word;
     white-space: pre-wrap; 
     color: #dcee00;
-}
-/* Creating custom made animation called typing which incrases width from 0 to 100 and displays text in typing style */
-@keyframes typing {
-    from { 
-        width: 0; 
-    }
-    to{
-        width: 100%;
-    }
 }
 
  /* Creating a bounceIn animation effect for the description of the person for a duration of 2 seconds after a delay of 2 seconds */
