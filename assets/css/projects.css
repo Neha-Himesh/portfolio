@@ -20,7 +20,6 @@
 /* Modify the font size of the text inside <p> tag */
 .project-card > p{
     font-size: 1.3rem;
-    color: white;
 }
 
 /* Modify the background color of the button inside the project card. Remove the border, Add color of the text as black */
