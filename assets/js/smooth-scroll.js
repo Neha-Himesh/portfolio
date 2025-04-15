@@ -2,6 +2,7 @@ export function smoothScroll(){
     // This block selects all anchor elements whose href attribute starts with '#' 
 	// (i.e. they link to an element ID on the page) and attaches a click event listener to each.
 	 var prevTargetElement = document.getElementById('home-link');
+
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	    anchor.addEventListener('click', function (e) {
 	        // Prevent the default anchor behavior (jumping to the anchor)
@@ -40,4 +41,22 @@ export function smoothScroll(){
 	        }
 	    });
 	});
+
+	document.addEventListener('scroll', function(e){
+		var windowPageYOffset = window.pageYOffset;
+		document.querySelectorAll('section').forEach((section, index, array)=>{
+	
+			if((windowPageYOffset >= (array[index].getBoundingClientRect().top + window.pageYOffset)) &&
+			(windowPageYOffset < (array[index + 1].getBoundingClientRect().top + window.pageYOffset))){
+				prevTargetElement.classList.remove('active');
+				console.log(array[index]);
+				array[index].classList.add('active');
+				prevTargetElement = array[index];
+				console.log(prevTargetElement);
+			}
+			
+		})
+	})
+
+
 }
