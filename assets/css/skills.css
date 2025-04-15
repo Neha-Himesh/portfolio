@@ -5,7 +5,8 @@
 }
 
 /* Add font size and weight to the Skill label */
-.skill span {
+.skill > span {
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
