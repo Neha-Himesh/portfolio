@@ -64,7 +64,7 @@
 }
 
 .progress-firebase{
-    animation: react-animation 1s linear forwards;
+    animation: firebase-animation 1s linear forwards;
 }
 
 /* Defining the html animation which fills the color till 85% of the width */
@@ -103,8 +103,20 @@
 }
 
 /* Defining the sql animation which fills the color till 80% of the width */
-@keyframes sql-animation{
+@keyframes -animation{
     100%{
         width: 80%;
+    }
+}
+
+@keyframes react-animation{
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes firebase-animation{
+    100%{
+        width: 60%;
     }
 }
