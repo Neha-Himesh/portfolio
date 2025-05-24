@@ -103,7 +103,7 @@
 }
 
 /* Defining the sql animation which fills the color till 80% of the width */
-@keyframes -animation{
+@keyframes sql-animation{
     100%{
         width: 80%;
     }
